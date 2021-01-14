@@ -1,12 +1,12 @@
-apiVersion: v1
-kind: Pod
+apiVersion: v1 # 該元件的版本號
+kind: Pod # 該元件屬性
 metadata:
-  name: kubernetes-demo-pod
-  labels:
+  name: kubernetes-demo-pod # 指定 Pod 的名稱
+  labels: # 指定 Pod 的標籤
     app: demoApp
 spec:
   containers:
-    - name: kubernetes-demo-container
-      image: hcwxd/kubernetes-demo
+    - name: kubernetes-demo-container # 指定container 名稱
+      image: hcwxd/kubernetes-demo # 指定要使用的 Image
       ports:
-        - containerPort: 3000
+        - containerPort: 3000 # 指定container 那些port 允許外部資源存取
